@@ -1,0 +1,54 @@
+﻿body {
+}
+ .TodayDateTextBox ,.PickUpTimeTextBox,.PickDateTextBox,.CurrentTimeTextBox{
+
+border-radius: 3px;
+    width: 250px;
+    height: 35px;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,c4c4c4+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(196,196,196,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(196,196,196,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(196,196,196,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c4c4c4',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+.TodayDateLabel,.CurrentTimeLabel,.PickDateLabel,.PickUpTimeLabel{
+
+font-weight: bold;
+    border-top: none !important;
+    font-size: larger;
+
+}
+
+
+
+        /*.auto-style1 {
+            width: 78%;
+            margin-left: 80px;
+        }
+        .auto-style2 {
+            width: 165px;
+        }
+        #resetButton {
+            width: 100px;
+            height: 35px;
+        }*/
+      
+        .auto-style1 {
+            width: 821px;
+        }
+        .auto-style2 {
+            width: 270px;
+        }
+        .auto-style3 {
+            width: 580px;
+        }
+      
+  
+
+
+  

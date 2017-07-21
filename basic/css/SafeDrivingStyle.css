@@ -1,0 +1,39 @@
+﻿body {
+}
+
+p.Paragraph{
+
+
+text-align: justify;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 10.5pt;
+    font-weight: 300;
+margin-left:5.5%;
+	margin-right: 30%;
+} 
+
+h3.ParagraphHeading{
+ margin-left: 5.5%;
+padding-top:2%;
+color:#DB3437;
+}
+a.ParagraphLink{
+margin-left: 2%;
+color:#DB3437;
+}
+
+p.ImageWithParagraph{
+text-align: justify;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 10.5pt;
+    font-weight: 300;
+	margin-left:7.5%;
+	margin-right: 30%;
+	
+
+}
+img.ImgId {
+    position: static;
+   
+    
+}

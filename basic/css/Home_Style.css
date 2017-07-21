@@ -1,0 +1,110 @@
+/*body {
+}
+
+
+
+.akhri {
+  position: relative;
+
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity:0.5;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.akhri:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: #fff;
+  font-weight:bold;
+  font-size: 30px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+*/
+
+
+#w0 table thead tr th{
+  /* padding:50px; //Put your css code here*/
+   /*background-color: #4E4D50;*/
+   background: rgb(168,40,40); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(168,40,40,1) 31%, rgba(168,40,40,1) 45%, rgba(168,40,40,1) 45%, rgba(168,40,40,1) 51%, rgba(168,40,40,1) 51%, rgba(73,0,0,1) 93%, rgba(73,0,0,1) 99%, rgba(73,0,0,1) 99%, rgba(73,0,0,1) 100%, rgba(122,0,0,1) 100%, rgba(73,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(168,40,40,1) 31%,rgba(168,40,40,1) 45%,rgba(168,40,40,1) 45%,rgba(168,40,40,1) 51%,rgba(168,40,40,1) 51%,rgba(73,0,0,1) 93%,rgba(73,0,0,1) 99%,rgba(73,0,0,1) 99%,rgba(73,0,0,1) 100%,rgba(122,0,0,1) 100%,rgba(73,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(168,40,40,1) 31%,rgba(168,40,40,1) 45%,rgba(168,40,40,1) 45%,rgba(168,40,40,1) 51%,rgba(168,40,40,1) 51%,rgba(73,0,0,1) 93%,rgba(73,0,0,1) 99%,rgba(73,0,0,1) 99%,rgba(73,0,0,1) 100%,rgba(122,0,0,1) 100%,rgba(73,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a82828', endColorstr='#490000',GradientType=0 ); /* IE6-9 */
+
+
+}
+#w0 thead{/*
+         background-color: blue;*/
+         color: white;
+    }
+
+ #w0 table tbody tr th, #w0 table tbody tr td{
+/*   padding:50px; //Put your css code here
+*/    /*background-color: red;*/
+
+
+}
+th a {
+    color: white;
+    text-decoration: none;
+}
+
+
+th  a:hover {
+    color: black;
+}
+.table-bordered {
+    border: 3px solid #5C0808;
+}
+th
+{
+  border: 3px solid #5C0808 !important;
+}
+td
+{
+  border: 1px solid #5C0808 !important;
+}
+
+.glyphicon-eye-open:before
+ {
+    content: "\e105" !important;
+    color: #990000 !important;
+  }
+ 
+    .glyphicon-pencil:before 
+  {
+    content: "\270f"!important;
+    color: #990000 !important;
+  }
+
+    .glyphicon-trash:before {
+    content: "\e020"!important;
+    color: #990000 !important;
+  }
+
+   .glyphicon-pencil:before:hover 
+  {
+    content: "\270f"!important;
+    color: white !important;
+  }
