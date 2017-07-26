@@ -19,7 +19,7 @@ class BookcarSearch extends bookcar
     {
         return [
             [['Booking_Id', 'Mobile', 'Car_Code'], 'integer'],
-            [['Name', 'Time', 'Pick_up_Time', 'Date', 'Pick_up_Date', 'Pick_up_Adress', 'Drop_off_Address'], 'safe'],
+            [['Name', 'Time', 'Pick_up_Adress', 'Drop_off_Address'], 'safe'],
         ];
     }
 
@@ -63,9 +63,7 @@ class BookcarSearch extends bookcar
             'Mobile' => $this->Mobile,
             'Car_Code' => $this->Car_Code,
             'Time' => $this->Time,
-            'Pick_up_Time' => $this->Pick_up_Time,
-            'Date' => $this->Date,
-            'Pick_up_Date' => $this->Pick_up_Date,
+            
         ]);
 
         $query->andFilterWhere(['like', 'Name', $this->Name])

@@ -34,12 +34,21 @@ class Bookcar extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['Name', 'Mobile', 'Car_Code', 'Time', 'Pick_up_Time', 'Date', 'Pick_up_Date', 'Pick_up_Adress', 'Drop_off_Address'], 'required'],
-            [['Mobile', 'Car_Code'], 'integer'],
-            [['Time', 'Pick_up_Time', 'Date', 'Pick_up_Date'], 'safe'],
-            [['Name'], 'string', 'max' => 100],
-            [['Pick_up_Adress', 'Drop_off_Address'], 'string', 'max' => 200],
-            [['Car_Code'], 'unique'],
+            [['Name', 'Mobile', 'Car_Code','Time', 'Pick_up_Adress', 'Drop_off_Address'], 'required'],
+        //   [['Time'], 'date', 'format'=>'H:i'],
+           
+           
+ ['Mobile','match','pattern'=>'/^[0-9]*$/','message'=>'Invalid! '],
+        ['Car_Code', 'string', 'max' => 7],
+
+ ['Mobile', 'string', 'max' => 11],
+
+           
+            [['Name'], 'string', 'max' => 25],
+            ['Name','match','pattern'=>'/^[a-zA-Z\s]*$/'],
+            ['Car_Code','match','pattern'=>'/^[A-Z]{2}\-[0-9]{4}$/','message'=>'Invalid! XX-1234'],
+            
+
         ];
     }
 
@@ -52,11 +61,9 @@ class Bookcar extends \yii\db\ActiveRecord
             'Booking_Id' => 'Booking  ID',
             'Name' => 'Name',
             'Mobile' => 'Mobile',
-            'Car_Code' => 'Car  Code',
-            'Time' => 'Time',
-            'Pick_up_Time' => 'Pick Up  Time',
-            'Date' => 'Date',
-            'Pick_up_Date' => 'Pick Up  Date',
+            'Car_Code' => 'Car  Number',
+            'Time' => 'Pick Up Date and Time',
+           
             'Pick_up_Adress' => 'Pick Up  Adress',
             'Drop_off_Address' => 'Drop Off  Address',
         ];

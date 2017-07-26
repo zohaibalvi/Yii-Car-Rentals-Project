@@ -55,7 +55,7 @@ $this->title = 'My Yii Application';
 <h2 class="firstHeading container-fluid" style="width: 80%; margin-top: 80px; font-size: 35px;">CAR LIST</h2>
 
 
-    <div class="row">
+    <div class="row" style="margin-left: 150px !important; margin-right: 150px !important;">
       
 <?php
 foreach($model as $rec){
@@ -64,21 +64,31 @@ foreach($model as $rec){
   $price=$rec->Price_Per_Day;
   $number=$rec->Car_Number;
 echo "
-<div class='col-lg-4'>
+
+
+<div class='col-lg-4' >
+<form method='get' action='/carrentals/basic/web/index.php'>
+
 <div class='panel-group'>
 <div class='panel panel-success'>
 <div class='panel-heading'>
-$name $number
+$name <h5>Car Code:$number</h5> <h5>Price:&nbsp$price</h5>
 </div>
-<div class='panel-body'>
-<img src='http://localhost/carrentals/basic/Images/$image'/ height='180' width='180 ' >
+<div class='panel-body' style='height: 184px;padding: 0px !important;'>
+<img src='http://localhost/carrentals/basic/Images/$image'/ height='100%' width='100%' >
 </div>
 <div class='panel-footer'>
-Price:&nbsp$price
+
+ <input class='btn btn-danger center-block' type='submit'>
+</form>
 </div>
+
+
 </div>
+ </div>
+
 </div>
-</div>
+
 ";
 }
 ?>
@@ -111,7 +121,7 @@ for( i=0; i<array1.length; i++){
 
 
 
-<!-- <div class="container">
+<!- <div class="container">
 
 <div style="margin: 70px 36px;position:relative;" id="wrapper"></div>
 <script>

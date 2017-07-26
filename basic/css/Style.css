@@ -165,6 +165,11 @@ background-color: #990000 !important;
 .dropdown-menu > li > a {
     color: white !important;}
 
+.panel-heading{
+    color: black !important;
+    background-color: #eae3e3 !important;
+    border-color: #eae3e3 !important;
+}
 
 /*
     h2 span { 

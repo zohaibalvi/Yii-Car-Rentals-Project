@@ -35,10 +35,20 @@ class RegisterCar extends \yii\db\ActiveRecord
     {
         return [
             [['Name', 'Car_Number', 'Company', 'City', 'Contact_Number', 'Number_Of_Seats', 'Price_Per_Day', 'Company_Created_Date', 'Description'], 'required'],
-            [['Car_Number', 'Contact_Number', 'Number_Of_Seats', 'Price_Per_Day'], 'integer'],
+            [[ 'Number_Of_Seats', 'Price_Per_Day'], 'integer'],
             [['Company_Created_Date'], 'safe'],
-            [['Name', 'Company', 'City'], 'string', 'max' => 50],
+            [['Name', 'Company', 'City'], 'string', 'max' => 25],
             [['Description'], 'string', 'max' => 100],
+ ['Contact_Number', 'string', 'max' => 11],
+  ['Car_Number', 'string', 'max' => 7],
+
+            [['Car_Number'], 'unique','message'=>'This Car number is already exist!'],
+
+           ['Contact_Number','match','pattern'=>'/^[0-9]*$/','message'=>'Invalid! '],
+[['Company','City'],'match','pattern'=>'/^[a-zA-Z\s]*$/'],
+             // ['Name','match','pattern'=>'/^[a-zA-Z\s]*$/'],
+            ['Car_Number','match','pattern'=>'/^[A-Z]{2}\-[0-9]{4}$/','message'=>'Invalid! XX-1234'],
+            
         ];
     }
 

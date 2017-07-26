@@ -27,13 +27,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'Car_Number')->textInput() ?>
+    <?= $form->field($model, 'Car_Number')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'Company')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'City')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'Contact_Number')->textInput() ?>
+    <?= $form->field($model, 'Contact_Number')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'Number_Of_Seats')->textInput() ?>
 
